@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@layer theme, base, components, utilities;
+@custom-variant dark (&:where(.dark, .dark *));
+
+.input-style {
+  @apply border-2 border-t-0 border-r-0 border-b-2 border-solid border-b-blue-200 focus:outline-0;
+}
+@layer base {
+  body {
+    @apply capitalize;
+  }
+}
+@layer {
+  .links li {
+    @apply capitalize transition rounded-xl py-1.5 px-2  hover:bg-linear-to-r hover:from-blue-500 hover:to-violet-500 hover:text-slate-100;
+  }
+}
+.container {
+  @apply mx-auto w-[80%] mb-10;
+}
+.box {
+  @apply w-[30%] px-6 py-7 relative cursor-pointer rounded-4xl bg-[#ddd] duration-300 hover:bg-[#777] hover:text-zinc-200;
+}
+
+@layer base {
+  label {
+    @apply text-amber-200;
+  }
+}
+@theme {
+  --color-main: #3b82f6; /* blue-500 */
+  --color-t_main: #8b5cf6; /* violet-500 */
+}
+
+@layer {
+  .card {
+    @apply mt-5 text-9xl text-cyan-950;
+  }
+}
+@layer {
+  .links_fotter li {
+    @apply text-slate-200 transition-all hover:text-main;
+  }
+}
