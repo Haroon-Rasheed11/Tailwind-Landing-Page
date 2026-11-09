@@ -6,74 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my-project</title>
   </head>
-  <body>
-    <!-- <h1 class="card">helllllooooo</h1>
-    <p
-      class="mt-6 py-7 text-7xl text-stone-500 sm:text-amber-400 md:text-violet-500"
-    >
-      my name is haroon
-    </p>
-    <div
-      class="m-auto flex h-96 w-80 items-center rounded-2xl bg-cyan-600 pl-3 text-white"
-      id="container"
-    >
-      <form action="">
-        <div class="flex flex-col gap-3" id="box-lable">
-          <label for="">enter your name : </label>
-          <input class="input-style" type="text" />
-          <label for="">enter your last name : </label>
-          <input class="input-style" type="text" />
-          <label for="">enter your age : </label>
-          <input class="input-style" type="text" />
-          <label for="">enter your emmail : </label>
-          <input class="input-style" type="text" />
-        </div>
-
-        <input
-          class="mx-auto mt-5 block w-20 rounded-sm bg-blue-500 font-mono text-lg text-main transition-all duration-200 hover:bg-blue-500 hover:outline-2 hover:outline-amber-200 hover:outline-solid focus:ring focus:ring-blue-300 focus:outline-none active:bg-blue-800"
-          type="submit"
-        />
-      </form>
-    </div>
-    <div class="my-20 bg-gray-200 p-2">
-      <ul class="space-y-2">
-        <li class="p-2 first:bg-yellow-100 dark:bg-cyan-800">item 1</li>
-        <li class="p-2 first:bg-yellow-100 odd:bg-green-300 even:bg-blue-200">
-          item 2
-        </li>
-        <li class="p-2 first:bg-yellow-100 odd:bg-green-300 even:bg-blue-200">
-          item 3
-        </li>
-        <li class="p-2 first:bg-yellow-100 odd:bg-green-300 even:bg-blue-200">
-          item 4
-        </li>
-        <li class="p-2 first:bg-yellow-100 odd:bg-green-300 even:bg-blue-200">
-          item 5
-        </li>
-      </ul>
-    </div> -->
-    <!-- <div
-
-      class="mx-7 mb-20 w-[400] rounded-md bg-slate-200 p-7 shadow-2xl ring-1 ring-slate-900/5 transition-all duration-300 ease-in-out dark:bg-slate-900 dark:ring-slate-200/5"
-    >
-      <h3
-        class="my-2 py-2 text-base font-medium text-slate-700 dark:text-white"
-      >
-        this is my name in the tailwind
-      </h3>
-      <p class="text-sm text-slate-500 dark:text-blue-100">
-        hello in the tailwind css
-      </p>
-      <button
-        id="dark_mode"
-        class="my-4 cursor-pointer rounded-md bg-blue-900 p-2 text-slate-100 transition-all hover:bg-blue-900 hover:text-white dark:text-white"
-      >
-        toogal to do dark
-      </button>
-    </div> -->
+  <body
+    class="transition-all duration-500 ease-in-out dark:bg-linear-to-b dark:from-slate-900 dark:to-slate-500 dark:text-slate-200 dark:transition-all"
+  >
     <nav id="container" class="container py-6">
       <div class="nav_d flex items-center justify-between">
-        <img class="w-52" src="/img/logo-light.webp" alt="tailwind css " />
+        <div class="relative mt-5 h-12 w-52">
+          <img
+            class="absolute inset-0 w-52 opacity-100 transition-opacity duration-500 ease-in-out dark:opacity-0"
+            src="/img/logo-light-removebg-preview.png"
+            alt=""
+          />
+          <img
+            class="absolute inset-0 w-52 opacity-0 transition-opacity duration-500 ease-in-out dark:opacity-100"
+            src="/img/logo-dark-removebg-preview.png"
+            alt=""
+          />
+        </div>
+        <div class="flex items-center gap-3 font-bold">
+          Dark Mood
+          <span
+            id="dark_mood"
+            class="relative block h-6 w-16 cursor-pointer rounded-xl bg-slate-300"
+          ></span>
+        </div>
         <ul class="links flex items-center space-x-10">
           <li class="bg-linear-to-r from-blue-500 to-violet-500 text-slate-100">
             <a href="#">protofil</a>
@@ -103,7 +59,7 @@
           >
         </div>
         <div class="image">
-          <img class="" src="/img/main_imag.jpeg" alt="" />
+          <img class="" src="/img/main_imag-removebg-preview.png" alt="" />
         </div>
       </div>
     </div>
@@ -162,7 +118,7 @@
       </div>
     </div>
     <div
-      class="box_info flex h-30 items-center bg-linear-to-r from-blue-700 to-t_main"
+      class="box_info flex h-30 items-center bg-linear-to-r from-blue-700 to-t_main dark:bg-linear-to-r dark:from-slate-900 dark:to-slate-700"
     >
       <div class="container">
         <div class="info_text mt-12 flex items-end justify-between">
@@ -170,14 +126,14 @@
             Move even faster with Tailwind UI.
           </p>
           <button
-            class="rounded-3xl bg-linear-to-r from-gray-200 to-violet-300 p-2 px-4"
+            class="cursor-pointer rounded-3xl bg-linear-to-r from-gray-200 to-violet-300 p-2 px-4 dark:bg-linear-to-r dark:from-main dark:to-t_main"
           >
             Start Here
           </button>
         </div>
       </div>
     </div>
-    <footer class="bg-blue-950">
+    <footer class="bg-blue-950 dark:bg-black">
       <div class="box_footer container flex items-center justify-between p-4">
         <div class="logo">
           <span class="my-8 block text-gray-200"
@@ -207,6 +163,7 @@
             <input
               class="cursor-pointer rounded-lg bg-gray-400 px-2 text-slate-200 transition-all hover:scale-[1.1]"
               type="submit"
+              value="Send"
             />
           </div>
           <span class="my-8 block text-gray-200"

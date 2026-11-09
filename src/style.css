@@ -19,7 +19,7 @@
   @apply mx-auto w-[80%] mb-10;
 }
 .box {
-  @apply w-[30%] px-6 py-7 relative cursor-pointer rounded-4xl bg-[#ddd] duration-300 hover:bg-[#777] hover:text-zinc-200;
+  @apply w-[30%] px-6 py-7 relative cursor-pointer rounded-4xl bg-[#ddd] dark:bg-slate-900 duration-300 hover:bg-[#777] dark:hover:bg-zinc-400 hover:text-zinc-200 dark:hover:text-zinc-800;
 }
 
 @layer base {
@@ -41,4 +41,26 @@
   .links_fotter li {
     @apply text-slate-200 transition-all hover:text-main;
   }
+}
+#dark_mood::after {
+  right: 0;
+}
+#dark_mood::after,
+#dark_mood.active::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background: linear-gradient(to right, var(--color-main), var(--color-t_main));
+  border: 2px solid white;
+  border-radius: 50%;
+  top: -1px;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+}
+#dark_mood:hover::after {
+  background: linear-gradient(to right, #9973f1, #5490f0);
+}
+#dark_mood.active::after {
+  transform: translateX(-38px);
 }

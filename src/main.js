@@ -5,8 +5,9 @@ import viteLogo from "./assets/vite.svg";
 // import { setupCounter } from "./counter.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const toggal_dark = document.getElementById("dark_mode");
+  const toggal_dark = document.getElementById("dark_mood");
   toggal_dark.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark");
+    toggal_dark.classList.toggle("active");
   });
 });
