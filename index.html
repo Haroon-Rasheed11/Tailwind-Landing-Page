@@ -44,10 +44,10 @@
     <div class="container">
       <div class="hero flex items-center justify-between space-x-5">
         <div class="info-box flex flex-col justify-between space-y-10">
-          <h1 class="text-5xl font-bold">
+          <h1 class="animate-text text-5xl font-bold">
             Rapidly build modern websites without ever leaving your HTML.
           </h1>
-          <p>
+          <p class="animate-text">
             A utility-first CSS framework packed with classes like flex, pt-4,
             text-center and rotate-90 that can be composed to build any design,
             directly in your markup.
@@ -63,20 +63,20 @@
         </div>
       </div>
     </div>
-    <div class="container w-full">
-      <h2 class="mx-auto mt-10 text-center text-3xl font-bold">
+    <div class="container my-30 w-full">
+      <h2 class="animate-text mx-auto mt-10 text-center text-3xl font-bold">
         "Best Practice" don't actually work.
       </h2>
-      <p class="mx-auto my-6 w-[70%] text-center">
+      <p class="animate-text mx-auto my-6 w-[70%] text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum modi
         voluptatibus adipisci suscipit optio! Exercitationem architecto maiores
         beatae! Dolorum quos, itaque distinctio earum exercitationem molestiae
         aliquam eaque voluptate nihil maiores.
       </p>
     </div>
-    <div class="container">
+    <div class="container my-10">
       <div class="box_users mt-20 flex justify-between">
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-delay="0">
           <img
             class="absolute top-[-15%] left-[38%] w-[20%] rounded-full"
             src="./img/adam.webp"
@@ -89,7 +89,7 @@
             time with it and you’ll realize semantic CSS was a 20 year mistake.
           </p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-delay="200">
           <img
             class="absolute top-[-15%] left-[38%] w-[20%] rounded-full"
             src="./img/marcel.webp"
@@ -102,7 +102,7 @@
             time with it and you’ll realize semantic CSS was a 20 year mistake.
           </p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-delay="400">
           <img
             class="absolute top-[-15%] left-[38%] w-[20%] rounded-full"
             src="./img/madeline.webp"
@@ -117,6 +117,40 @@
         </div>
       </div>
     </div>
+    <section class="container mx-auto my-20">
+      <div class="text-center">
+        <h2 class="mb-5 text-3xl font-bold" data-aos="fade-up">
+          Why Choose Tailwind CSS?
+        </h2>
+
+        <p
+          class="mx-auto w-[70%] text-zinc-600 dark:text-slate-300"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Build modern interfaces faster using utility-first classes, responsive
+          layouts, and customizable design systems.
+        </p>
+      </div>
+
+      <div class="mt-10 flex justify-between gap-8">
+        <div class="box" data-aos="fade-up" data-aos-delay="0">
+          <h3 class="mb-3 text-2xl">Fast Development</h3>
+          <p>Create interfaces faster with utility classes.</p>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="mb-3 text-2xl">Responsive Design</h3>
+          <p>Build layouts that work on every device.</p>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="mb-3 text-2xl">Easy Customization</h3>
+          <p>Customize colors, spacing and components easily.</p>
+        </div>
+      </div>
+    </section>
+
     <div
       class="box_info flex h-30 items-center bg-linear-to-r from-blue-700 to-t_main dark:bg-linear-to-r dark:from-slate-900 dark:to-slate-700"
     >
@@ -126,7 +160,7 @@
             Move even faster with Tailwind UI.
           </p>
           <button
-            class="cursor-pointer rounded-3xl bg-linear-to-r from-gray-200 to-violet-300 p-2 px-4 dark:bg-linear-to-r dark:from-main dark:to-t_main"
+            class="cursor-pointer rounded-3xl bg-linear-to-r from-gray-200 to-violet-300 p-2 px-4 transition duration-300 hover:scale-110 dark:bg-linear-to-r dark:from-main dark:to-t_main"
           >
             Start Here
           </button>

@@ -19,7 +19,7 @@
   @apply mx-auto w-[80%] mb-10;
 }
 .box {
-  @apply w-[30%] px-6 py-7 relative cursor-pointer rounded-4xl bg-[#ddd] dark:bg-slate-900 duration-300 hover:bg-[#777] dark:hover:bg-zinc-400 hover:text-zinc-200 dark:hover:text-zinc-800;
+  @apply w-[30%] px-6 py-7 relative cursor-pointer rounded-4xl bg-[#ddd] dark:bg-slate-900 duration-300 translate-y-0 hover:bg-[#777] dark:hover:bg-zinc-400 hover:text-zinc-200 dark:hover:text-zinc-800;
 }
 
 @layer base {
@@ -63,4 +63,19 @@
 }
 #dark_mood.active::after {
   transform: translateX(-38px);
+}
+@keyframes slideRightToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-text {
+  animation: slideRightToLeft 1s ease-out forwards;
 }
