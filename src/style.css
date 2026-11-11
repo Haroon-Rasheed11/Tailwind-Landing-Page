@@ -16,10 +16,11 @@
   }
 }
 .container {
-  @apply mx-auto w-[80%] mb-10;
+  @apply mx-auto w-[80%] mb-10 max-lg:w-[100%];
 }
+
 .box {
-  @apply w-[30%] px-6 py-7 relative cursor-pointer rounded-4xl bg-[#ddd] dark:bg-slate-900 duration-300 translate-y-0 hover:bg-[#777] dark:hover:bg-zinc-400 hover:text-zinc-200 dark:hover:text-zinc-800;
+  @apply px-6 py-7 relative cursor-pointer rounded-4xl bg-[#ddd] dark:bg-slate-900 duration-300 translate-y-0 hover:bg-[#777] dark:hover:bg-zinc-400 hover:text-zinc-200 dark:hover:text-zinc-800;
 }
 
 @layer base {

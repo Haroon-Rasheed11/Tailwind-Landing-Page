@@ -9,18 +9,22 @@
   <body
     class="transition-all duration-500 ease-in-out dark:bg-linear-to-b dark:from-slate-900 dark:to-slate-500 dark:text-slate-200 dark:transition-all"
   >
-    <nav id="container" class="container py-6">
-      <div class="nav_d flex items-center justify-between">
-        <div class="relative mt-5 h-12 w-52">
+    <nav id="container" class="container flex justify-center py-6">
+      <div
+        class="nav_d flex w-full items-center justify-between max-lg:flex-wrap"
+      >
+        <div class="relative mt-5 h-12 w-52 max-sm:mt-7 max-sm:w-32">
           <img
             class="absolute inset-0 w-52 opacity-100 transition-opacity duration-500 ease-in-out dark:opacity-0"
             src="/img/logo-light-removebg-preview.png"
-            alt=""
+            alt="logo_light"
+            loading="lazy"
           />
           <img
             class="absolute inset-0 w-52 opacity-0 transition-opacity duration-500 ease-in-out dark:opacity-100"
             src="/img/logo-dark-removebg-preview.png"
-            alt=""
+            alt="logo_dark"
+            loading="eager"
           />
         </div>
         <div class="flex items-center gap-3 font-bold">
@@ -30,7 +34,9 @@
             class="relative block h-6 w-16 cursor-pointer rounded-xl bg-slate-300"
           ></span>
         </div>
-        <ul class="links flex items-center space-x-10">
+        <ul
+          class="links order-last flex items-center space-x-5 max-lg:mt-6 max-lg:w-full max-lg:justify-center max-sm:flex-wrap max-sm:justify-center"
+        >
           <li class="bg-linear-to-r from-blue-500 to-violet-500 text-slate-100">
             <a href="#">protofil</a>
           </li>
@@ -42,12 +48,16 @@
       </div>
     </nav>
     <div class="container">
-      <div class="hero flex items-center justify-between space-x-5">
-        <div class="info-box flex flex-col justify-between space-y-10">
-          <h1 class="animate-text text-5xl font-bold">
+      <div
+        class="hero flex items-center justify-between space-x-5 max-lg:flex-col"
+      >
+        <div
+          class="info-box flex max-w-[600px] flex-col justify-between space-y-10 max-lg:my-7 max-md:text-center"
+        >
+          <h1 class="animate-text text-5xl font-bold max-lg:text-3xl">
             Rapidly build modern websites without ever leaving your HTML.
           </h1>
-          <p class="animate-text">
+          <p class="animate-text max-lg:text-xl">
             A utility-first CSS framework packed with classes like flex, pt-4,
             text-center and rotate-90 that can be composed to build any design,
             directly in your markup.
@@ -58,8 +68,13 @@
             get started</span
           >
         </div>
-        <div class="image">
-          <img class="" src="/img/main_imag-removebg-preview.png" alt="" />
+        <div class="image max-w-full">
+          <img
+            class=""
+            src="/img/main_imag-removebg-preview.png"
+            alt="main_img"
+            loading="eager"
+          />
         </div>
       </div>
     </div>
@@ -75,12 +90,15 @@
       </p>
     </div>
     <div class="container my-10">
-      <div class="box_users mt-20 flex justify-between">
+      <div
+        class="box_users mt-20 grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1"
+      >
         <div class="box" data-aos="fade-up" data-aos-delay="0">
           <img
-            class="absolute top-[-15%] left-[38%] w-[20%] rounded-full"
+            class="absolute top-[-15%] left-[38%] w-[20%] rounded-full max-sm:left-[45%] max-sm:w-[12%]"
             src="./img/adam.webp"
-            alt=""
+            alt="Adam"
+            loading="lazy"
           />
           <h3 class="my-2 text-center text-3xl">Adam Sandler</h3>
           <p class="text-[14px]">
@@ -91,9 +109,10 @@
         </div>
         <div class="box" data-aos="fade-up" data-aos-delay="200">
           <img
-            class="absolute top-[-15%] left-[38%] w-[20%] rounded-full"
+            class="absolute top-[-15%] left-[38%] w-[20%] rounded-full max-sm:left-[45%] max-sm:w-[12%]"
             src="./img/marcel.webp"
-            alt=""
+            alt="marcel"
+            loading="lazy"
           />
           <h3 class="my-2 text-center text-3xl">marcel</h3>
           <p class="text-[14px]">
@@ -102,11 +121,16 @@
             time with it and you’ll realize semantic CSS was a 20 year mistake.
           </p>
         </div>
-        <div class="box" data-aos="fade-up" data-aos-delay="400">
+        <div
+          class="box max-lg:col-span-2 max-lg:w-[48%] max-lg:justify-self-center max-sm:col-span-1 max-sm:w-full"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <img
-            class="absolute top-[-15%] left-[38%] w-[20%] rounded-full"
+            class="absolute top-[-15%] left-[38%] w-[20%] rounded-full max-sm:left-[45%] max-sm:w-[12%]"
             src="./img/madeline.webp"
-            alt=""
+            alt="madeline"
+            loading="lazy"
           />
           <h3 class="my-2 text-center text-3xl">madeline</h3>
           <p class="text-[14px]">
@@ -133,20 +157,36 @@
         </p>
       </div>
 
-      <div class="mt-10 flex justify-between gap-8">
-        <div class="box" data-aos="fade-up" data-aos-delay="0">
+      <div
+        class="mt-10 flex justify-between gap-8 max-md:w-full max-md:flex-wrap max-md:justify-center"
+      >
+        <div
+          class="box max-md:text-center"
+          data-aos="fade-up"
+          data-aos-delay="0"
+        >
           <h3 class="mb-3 text-2xl">Fast Development</h3>
           <p>Create interfaces faster with utility classes.</p>
         </div>
 
-        <div class="box" data-aos="fade-up" data-aos-delay="200">
+        <div
+          class="box max-md:text-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <h3 class="mb-3 text-2xl">Responsive Design</h3>
           <p>Build layouts that work on every device.</p>
         </div>
 
-        <div class="box" data-aos="fade-up" data-aos-delay="400">
+        <div
+          class="box max-md:flex max-md:flex-col max-md:text-center"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <h3 class="mb-3 text-2xl">Easy Customization</h3>
-          <p>Customize colors, spacing and components easily.</p>
+          <p class="max-md:text-[14px]">
+            Customize colors, spacing and components easily.
+          </p>
         </div>
       </div>
     </section>
@@ -155,12 +195,16 @@
       class="box_info flex h-30 items-center bg-linear-to-r from-blue-700 to-t_main dark:bg-linear-to-r dark:from-slate-900 dark:to-slate-700"
     >
       <div class="container">
-        <div class="info_text mt-12 flex items-end justify-between">
-          <p class="text-4xl font-bold text-blue-50">
+        <div
+          class="info_text mt-12 flex items-end justify-between max-sm:justify-around"
+        >
+          <p
+            class="text-4xl font-bold text-blue-50 max-lg:text-3xl max-md:text-2xl max-sm:text-xl"
+          >
             Move even faster with Tailwind UI.
           </p>
           <button
-            class="cursor-pointer rounded-3xl bg-linear-to-r from-gray-200 to-violet-300 p-2 px-4 transition duration-300 hover:scale-110 dark:bg-linear-to-r dark:from-main dark:to-t_main"
+            class="cursor-pointer rounded-3xl bg-linear-to-r from-gray-200 to-violet-300 p-2 px-4 transition duration-300 hover:scale-110 max-sm:p-1 max-sm:px-5 dark:bg-linear-to-r dark:from-main dark:to-t_main"
           >
             Start Here
           </button>
@@ -168,16 +212,25 @@
       </div>
     </div>
     <footer class="bg-blue-950 dark:bg-black">
-      <div class="box_footer container flex items-center justify-between p-4">
+      <div
+        class="box_footer container flex items-center justify-between p-4 max-lg:max-w-none max-md:flex-wrap max-md:items-start max-sm:flex-col max-sm:items-center max-sm:gap-5"
+      >
         <div class="logo">
-          <span class="my-8 block text-gray-200"
-            >Copyright © 2023, All Rights Reserved</span
-          >
-          <img class="w-52" src="./img/logo-dark-removebg-preview.png" alt="" />
+          <span class="my-8 block text-gray-200 max-lg:my-3">
+            Copyright © 2023, All Rights Reserved
+          </span>
+
+          <img
+            class="w-52"
+            src="./img/logo-dark-removebg-preview.png"
+            alt="logo_dark"
+            loading="lazy"
+          />
         </div>
+
         <div class="block">
           <ul
-            class="links_fotter grid grid-cols-2 grid-rows-3 gap-3 space-x-12 text-slate-100"
+            class="links_fotter grid grid-cols-2 gap-x-8 gap-y-3 text-slate-100"
           >
             <li><a href="#">about</a></li>
             <li><a href="#">contact</a></li>
@@ -187,28 +240,30 @@
             <li><a href="#">Privacy</a></li>
           </ul>
         </div>
-        <div>
-          <div class="xp-6 flex justify-between pt-6">
+
+        <div class="max-md:w-full">
+          <div
+            class="flex pt-6 max-md:w-full max-md:justify-center max-md:gap-3"
+          >
             <input
-              class="rounded-lg bg-slate-200 p-2 text-slate-700"
+              class="mx-8 rounded-lg bg-slate-200 p-2 text-slate-700"
               type="text"
-              placeholder="enter your emmail"
+              placeholder="enter your email"
             />
+
             <input
-              class="cursor-pointer rounded-lg bg-gray-400 px-2 text-slate-200 transition-all hover:scale-[1.1]"
+              class="cursor-pointer rounded-lg bg-gray-400 px-2 text-slate-200 transition-all hover:scale-110"
               type="submit"
               value="Send"
             />
           </div>
-          <span class="my-8 block text-gray-200"
-            >Copyright © 2023, All Rights Reserved</span
-          >
+
+          <span class="my-8 block text-gray-200 max-lg:hidden">
+            Copyright © 2023, All Rights Reserved
+          </span>
         </div>
       </div>
     </footer>
-
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
-
-<!-- flowbite مكتبة تنسيق جاهزه تساعدني في بناء الصفحات  -->

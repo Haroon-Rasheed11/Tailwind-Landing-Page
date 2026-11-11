@@ -4,7 +4,6 @@ import javascriptLogo from "./assets/javascript.svg";
 import viteLogo from "./assets/vite.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import { setupCounter } from "./counter.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const toggal_dark = document.getElementById("dark_mood");
@@ -24,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 AOS.init({
-  duration: 1000,
+  duration: 500,
   once: true,
   easing: "ease-out-cubic",
 });
